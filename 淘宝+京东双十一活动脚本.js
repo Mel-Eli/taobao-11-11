@@ -173,7 +173,7 @@ function runTaobao(appName, activityData, taskList) {
                         j++;
                         i++;
                         back();
-                        sleep(200 * speed);
+                        sleep(190 * speed);
                         back();
                         break;
                     }
@@ -234,7 +234,7 @@ function runTaobao(appName, activityData, taskList) {
                     clickButton(button);
                     randomSleep(1500 * speed);
                     log("【" + task + "】成功")
-                    //支付宝任务签到后需要点击确认按钮
+                        //支付宝任务签到后需要点击确认按钮
                     if (appName == '支付宝') {
                         clickContent('好的，我知道了');
                     }
@@ -476,8 +476,7 @@ function smlMove(qx, qy, zx, zy, time) {
     };
     for (var i = 0; i < 4; i++) {
         eval("point.push(dx" + i + ")");
-    }
-    ;
+    };
     for (let i = 0; i < 1; i += 0.08) {
         xxyy = [parseInt(bezierCurves(point, i).x), parseInt(bezierCurves(point, i).y)];
         xxy.push(xxyy);
